@@ -3,8 +3,8 @@
 import numpy as np
 import numpy.random 
 
-# Создание массива со случайными целыми и дробными числами
-array = np.random.randint(0, 12, 10)
+# Создание массива со случайными 10 целыми числами от 0 до 15
+array = np.random.randint(0, 15, 10)
 
 # Cортировка по возрастанию/убыванию
 sort_array = sorted(array)
@@ -30,7 +30,7 @@ print("Случайна выборка из массива")
 print(rand_array)
 
 # Сортировка простыми вставками
-def just_sort(lst = np.random.randint(0, 12, 10)):
+def just_sort(lst = np.random.randint(0, 15, 10)):
     for i in range(len(lst) - 1):
         j = i - 1 
         key = lst[i]
